@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Booking</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="booking-page">
+  <div class="booking-wrap">
+    <div class="top-row">
+      <a class="back-link" href="horizion.html">Back To Horizons</a>
+    </div>
+
+    <p class="label">BOOKING FORM</p>
+    <h1>Book Your Trip To <span class="destination-name" id="destinationName">Destination</span></h1>
+    <p class="sub">Fill your details below and our team will contact you shortly.</p>
+
+    <form>
+      <div class="form-grid">
+        <div class="field">
+          <label for="fullName">Full Name</label>
+          <input id="fullName" name="fullName" type="text" placeholder="Enter full name" required>
+        </div>
+
+        <div class="field">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" placeholder="Enter email address" required>
+        </div>
+
+        <div class="field">
+          <label for="phone">Phone Number</label>
+          <input id="phone" name="phone" type="tel" placeholder="Enter phone number" required>
+        </div>
+
+        <div class="field">
+          <label for="people">Number Of People</label>
+          <input id="people" name="people" type="number" min="1" placeholder="e.g. 2" required>
+        </div>
+
+        <div class="field">
+          <label for="travelDate">Preferred Travel Date</label>
+          <input id="travelDate" name="travelDate" type="date" required>
+        </div>
+
+        <div class="field">
+          <label for="duration">Trip Duration</label>
+          <select id="duration" name="duration" required>
+            <option value="">Select duration</option>
+            <option>2-3 Days</option>
+            <option>4-6 Days</option>
+            <option>7-10 Days</option>
+            <option>10+ Days</option>
+          </select>
+        </div>
+
+        <div class="field full">
+          <label for="destinationInput">Destination</label>
+          <input id="destinationInput" name="destination" type="text" readonly>
+        </div>
+
+        <div class="field full">
+          <label for="notes">Special Requests</label>
+          <textarea id="notes" name="notes" placeholder="Tell us if you need visa support, honeymoon arrangements, etc."></textarea>
+        </div>
+      </div>
+
+      <button class="submit-btn" type="submit">Submit Booking Request</button>
+    </form>
+  </div>
+
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const destination = params.get("destination") || "Destination";
+    document.getElementById("destinationName").textContent = destination;
+    document.getElementById("destinationInput").value = destination;
+  </script>
+</body>
+</html>
+

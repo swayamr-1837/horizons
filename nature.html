@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nature Destinations</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="destination-page">
+  <div class="page-wrap">
+    <div class="topbar">
+      <a class="back-link" href="horizion.html">Back To Horizons</a>
+    </div>
+    <p class="heading-label">NATURE COLLECTION</p>
+    <h1>Explore <span>Nature</span> Destinations</h1>
+    <p class="intro">Discover handpicked Nature experiences across domestic and international regions. Total trips: 7.</p>
+    <section class="category">
+      <h2 class="category-title">Domestic</h2>
+      <div class="cards">
+        <article class="card">
+          <div class="image-space">IMAGE SPACE</div>
+          <div class="card-content">
+            <h3 class="card-title">Kerala</h3>
+            <p class="card-text">Backwater cruises, greenery, and calm retreats.</p>
+            <div class="card-actions">
+              <a class="btn btn-details" href="#">View Details</a>
+              <a class="btn btn-book" href="booking.html?destination=Kerala">Book Now</a>
+            </div>
+          </div>
+        </article>
+        <article class="card">
+          <div class="image-space">IMAGE SPACE</div>
+          <div class="card-content">
+            <h3 class="card-title">Kaziranga</h3>
+            <p class="card-text">Wildlife safaris and rich biodiversity experiences.</p>
+            <div class="card-actions">
+              <a class="btn btn-details" href="#">View Details</a>
+              <a class="btn btn-book" href="booking.html?destination=Kaziranga">Book Now</a>
+            </div>
+          </div>
+        </article>
+        <article class="card">
+          <div class="image-space">IMAGE SPACE</div>
+          <div class="card-content">
+            <h3 class="card-title">Coorg</h3>
+            <p class="card-text">Coffee hills, misty forests, and scenic valley views.</p>
+            <div class="card-actions">
+              <a class="btn btn-details" href="#">View Details</a>
+              <a class="btn btn-book" href="booking.html?destination=Coorg">Book Now</a>
+            </div>
+          </div>
+        </article>
+        <article class="card">
+          <div class="image-space">IMAGE SPACE</div>
+          <div class="card-content">
+            <h3 class="card-title">Sundarbans</h3>
+            <p class="card-text">Mangrove wilderness and unique delta ecosystem tours.</p>
+            <div class="card-actions">
+              <a class="btn btn-details" href="#">View Details</a>
+              <a class="btn btn-book" href="booking.html?destination=Sundarbans">Book Now</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+    <section class="category">
+      <h2 class="category-title">International</h2>
+      <div class="cards">
+        <article class="card">
+          <div class="image-space">IMAGE SPACE</div>
+          <div class="card-content">
+            <h3 class="card-title">Amazon Basin</h3>
+            <p class="card-text">Rainforest ecology, river expeditions, and rare wildlife habitats.</p>
+            <div class="card-actions">
+              <a class="btn btn-details" href="#">View Details</a>
+              <a class="btn btn-book" href="booking.html?destination=Amazon%20Basin">Book Now</a>
+            </div>
+          </div>
+        </article>
+        <article class="card">
+          <div class="image-space">IMAGE SPACE</div>
+          <div class="card-content">
+            <h3 class="card-title">Iceland</h3>
+            <p class="card-text">Waterfalls, glaciers, and dramatic natural landscapes.</p>
+            <div class="card-actions">
+              <a class="btn btn-details" href="#">View Details</a>
+              <a class="btn btn-book" href="booking.html?destination=Iceland">Book Now</a>
+            </div>
+          </div>
+        </article>
+        <article class="card">
+          <div class="image-space">IMAGE SPACE</div>
+          <div class="card-content">
+            <h3 class="card-title">Norwegian Fjords</h3>
+            <p class="card-text">Deep fjords, cliffs, and nature cruise routes.</p>
+            <div class="card-actions">
+              <a class="btn btn-details" href="#">View Details</a>
+              <a class="btn btn-book" href="booking.html?destination=Norwegian%20Fjords">Book Now</a>
+            </div>
+          </div>
+        </article>
+        <article class="card">
+          <div class="image-space">IMAGE SPACE</div>
+          <div class="card-content">
+            <h3 class="card-title">Many More Coming Soon</h3>
+            <p class="card-text">New destinations are being added soon. Stay tuned for more curated trips.</p>
+            <div class="card-actions">
+              <a class="btn btn-details" href="#">View Details</a>
+              <a class="btn btn-book" href="booking.html?destination=Many%20More%20Coming%20Soon">Book Now</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+  </div>
+
+  <div class='details-modal' id='detailsModal'>
+    <div class='details-box'>
+      <button class='details-close' id='detailsClose' type='button'>X</button>
+      <h3 class='details-title' id='detailsTitle'>Destination Details</h3>
+      <div class='details-body' id='detailsBody'></div>
+    </div>
+  </div>
+
+  <script>
+    const detailsData = {
+      'Kerala': {
+        about: 'Kerala is a nature-rich destination known for backwaters, greenery, and peaceful retreats.',
+        famous: 'Top places include Alleppey backwaters, Munnar hills, and Periyar wildlife reserve.',
+        culture: 'Local culture features traditional arts, Ayurveda, and community-driven hospitality.',
+        why: 'It is famous for eco-tourism, houseboats, and serene natural landscapes.'
+      },
+      'Iceland': {
+        about: 'Iceland is a dramatic nature destination with glaciers, waterfalls, and volcanic terrain.',
+        famous: 'Highlights include Golden Circle, Blue Lagoon, and black sand beaches.',
+        culture: 'Its culture blends Nordic traditions, sustainability values, and outdoor exploration.',
+        why: 'It is famous for unique geology, Northern Lights, and untouched nature routes.'
+      }
+    };
+
+    const modal = document.getElementById('detailsModal');
+    const closeBtn = document.getElementById('detailsClose');
+    const titleEl = document.getElementById('detailsTitle');
+    const bodyEl = document.getElementById('detailsBody');
+
+    document.querySelectorAll('.btn-details').forEach((btn) => {
+      btn.addEventListener('click', (event) => {
+        event.preventDefault();
+        const card = btn.closest('.card');
+        const destination = card ? card.querySelector('.card-title').textContent.trim() : 'Destination';
+        titleEl.textContent = destination + ' Details';
+
+        if (detailsData[destination]) {
+          const d = detailsData[destination];
+          bodyEl.innerHTML =
+            '<p><strong>About:</strong> ' + d.about + '</p>' +
+            '<p><strong>Famous Places:</strong> ' + d.famous + '</p>' +
+            '<p><strong>Culture:</strong> ' + d.culture + '</p>' +
+            '<p><strong>Why It Is Famous:</strong> ' + d.why + '</p>';
+        } else {
+          bodyEl.innerHTML =
+            '<div class=\'coming-soon\'>COMING SOON</div>' +
+            '<p class=\'coming-note\'>Detailed destination information will be available soon.</p>';
+        }
+
+        modal.classList.add('show');
+      });
+    });
+
+    closeBtn.addEventListener('click', () => modal.classList.remove('show'));
+    modal.addEventListener('click', (event) => {
+      if (event.target === modal) modal.classList.remove('show');
+    });
+  </script>
+</body>
+</html>
+
+

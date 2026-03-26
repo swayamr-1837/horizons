@@ -1,0 +1,155 @@
+*{box-sizing:border-box;margin:0;padding:0}
+
+body.horizion-page,body.destination-page,body.booking-page{font-family:"Segoe UI",Tahoma,Geneva,Verdana,sans-serif}
+body.horizion-page h1,body.horizion-page .section-title,body.horizion-page .collaboration-title,body.horizion-page .promise-title,body.horizion-page .promise-card h3,body.horizion-page .contact-title,body.horizion-page .contact-card h3,body.horizion-page .footer-brand,body.destination-page h1,body.destination-page .category-title,body.destination-page .card-title,body.destination-page .details-title,body.booking-page h1{font-family:Georgia,"Times New Roman",serif;font-weight:500}
+
+/* HORIZION */
+body.horizion-page{background:#f4f7fb;color:#0f172a;min-width:1480px}
+body.horizion-page .navbar,body.horizion-page .nav-left,body.horizion-page .nav-right,body.horizion-page .hero,body.horizion-page .hero-actions,body.horizion-page .hero-stats,body.horizion-page .type-grid,body.horizion-page .search-bar,body.horizion-page .eyebrow{display:flex;align-items:center}
+body.horizion-page .navbar{justify-content:space-between;height:72px;padding:0 24px;background:#0f172a}
+body.horizion-page .nav-left{gap:12px}
+body.horizion-page .nav-right{gap:22px}
+body.horizion-page .logo-space{width:44px;height:44px;display:grid;place-items:center;border:2px dashed #94a3b8;border-radius:8px;overflow:hidden;background:#fff}
+body.horizion-page .logo-space img{width:100%;height:100%;display:block;object-fit:cover}
+body.horizion-page .brand{color:#e2e8f0;font-size:24px;font-weight:700;letter-spacing:.5px}
+body.horizion-page .nav-right a{color:#e2e8f0;text-decoration:none;font-size:15px;transition:color .2s}
+body.horizion-page .nav-right a:hover{color:#38bdf8}
+
+body.horizion-page .hero{min-height:calc(100vh - 72px);padding:72px 24px 44px;text-align:center;flex-direction:column;justify-content:center;background:linear-gradient(rgba(240,236,228,.86),rgba(240,236,228,.86)),url("download.jpg") center/cover no-repeat}
+body.horizion-page .hero-content{max-width:980px}
+body.horizion-page .eyebrow,body.horizion-page .section-label,body.horizion-page .collab-label,body.horizion-page .promise-label,body.horizion-page .contact-label{font-size:13px;letter-spacing:7px;color:#b28a3a}
+body.horizion-page .eyebrow{justify-content:center;gap:16px;margin-bottom:34px;color:#5b5f65;letter-spacing:6px}
+body.horizion-page .eyebrow span{width:56px;height:1px;background:#c4ad7f}
+body.horizion-page h1,body.horizion-page .section-title,body.horizion-page .collaboration-title,body.horizion-page .promise-title,body.horizion-page .promise-card h3,body.horizion-page .contact-title{line-height:1.1}
+body.horizion-page h1{color:#232830;font-size:82px;margin-bottom:26px}
+body.horizion-page .section-title{color:#232830;font-size:58px;margin-bottom:64px}
+body.horizion-page .collaboration-title{font-size:62px;margin-bottom:20px}
+body.horizion-page .promise-title{color:#252a31;font-size:56px;margin-bottom:70px}
+body.horizion-page .contact-title{font-size:50px;margin-bottom:28px}
+body.horizion-page .promise-card h3{font-size:21px;margin-bottom:12px}
+body.horizion-page .highlight,body.horizion-page .promise-title span,body.horizion-page .footer-brand span,body.booking-page .destination-name{color:#b28a3a;font-style:italic}
+body.horizion-page .collaboration-title span{color:#c39b48;font-style:italic}
+body.horizion-page .hero-subtitle{max-width:900px;margin:0 auto 34px;color:#5b5f64;font-size:16px;line-height:1.65}
+body.horizion-page .hero-actions{gap:18px;margin-bottom:84px}
+body.horizion-page .btn{min-width:320px;padding:16px 44px;border:1px solid #a9adb1;border-radius:2px;color:#2a3138;text-decoration:none;font-size:16px;letter-spacing:.6px;transition:all .2s}
+body.horizion-page .btn-primary{background:#b28a3a;border-color:#b28a3a;color:#fff;font-weight:600}
+body.horizion-page .btn-primary:hover{background:#9f7b33;border-color:#9f7b33}
+body.horizion-page .btn-outline:hover{background:rgba(255,255,255,.4)}
+
+body.horizion-page .hero-stats{width:960px;justify-content:space-between;gap:20px}
+body.horizion-page .stat{width:220px;text-align:center}
+body.horizion-page .stat-value{font-size:48px;color:#2e3237;margin-bottom:6px}
+body.horizion-page .stat-label{font-size:13px;letter-spacing:2px;color:#6d7177}
+
+body.horizion-page .discover{background:#efedeb;padding-bottom:110px}
+body.horizion-page .search-bar-wrap{width:1080px;margin:0 auto;transform:translateY(-34px)}
+body.horizion-page .search-bar{min-height:86px;padding:8px;border:1px solid #e2dccf;border-radius:6px;background:#f8f7f4;box-shadow:0 14px 28px rgba(42,49,56,.08)}
+body.horizion-page .search-item{flex:1;min-height:60px;padding:0 24px;border-right:1px solid #e4dece;display:flex;flex-direction:column;justify-content:center;gap:5px}
+body.horizion-page .search-main{flex:1.65}
+body.horizion-page .search-small{flex:.7;padding:0 16px}
+body.horizion-page .search-item:last-of-type{border-right:none}
+body.horizion-page .search-heading{font-size:12px;letter-spacing:2px;color:#8a826e}
+body.horizion-page .search-control{border:none;outline:none;background:transparent;color:#4b5259;font-family:inherit;cursor:text}
+body.horizion-page .search-control:disabled{color:#7b8188;cursor:not-allowed}
+body.horizion-page .main-control{font-size:22px}
+body.horizion-page .small-control{font-size:15px}
+body.horizion-page .search-btn{min-width:170px;height:68px;margin-left:10px;border:1px solid #b28a3a;border-radius:3px;background:#b28a3a;color:#fff;font-size:30px;font-weight:600;cursor:not-allowed}
+
+body.horizion-page .discover-inner{width:1420px;margin:50px auto 0;text-align:center}
+body.horizion-page .section-label{margin-bottom:26px}
+body.horizion-page .collab-label{margin-bottom:24px;color:#c39b48;letter-spacing:8px}
+body.horizion-page .promise-label{margin-bottom:24px;letter-spacing:8px}
+body.horizion-page .contact-label{margin-bottom:14px}
+
+body.horizion-page .type-grid{justify-content:center;gap:16px;margin-bottom:120px}
+body.horizion-page .type-card{width:200px;height:170px;display:flex;flex-direction:column;align-items:center;justify-content:center;border:1px solid #e0d8ca;border-radius:6px;background:#f8f7f4;color:#26303a;text-decoration:none;transition:transform .2s,box-shadow .2s,border-color .2s}
+body.horizion-page .type-card:hover{transform:translateY(-3px);border-color:#c6b086;box-shadow:0 10px 18px rgba(72,64,45,.14)}
+body.horizion-page .type-card.active{background:linear-gradient(140deg,#af852f,#c69a43);border-color:#b78d3c;color:#fff;box-shadow:0 16px 28px rgba(96,75,33,.28)}
+body.horizion-page .type-icon{font-size:24px;margin-bottom:14px}
+body.horizion-page .type-name{font-size:24px;font-weight:600;margin-bottom:6px}
+body.horizion-page .type-count{font-size:16px;color:#8a9096}
+body.horizion-page .type-card.active .type-count{color:rgba(255,255,255,.86)}
+
+body.horizion-page .collaboration-section{background:linear-gradient(rgba(18,20,26,.96),rgba(18,20,26,.96));padding:110px 0 130px}
+body.horizion-page .collaboration-wrap,body.horizion-page .contact-wrap,body.horizion-page .footer-wrap{width:1180px;margin:0 auto}
+body.horizion-page .collaboration-wrap{text-align:center;color:#f4f1ea}
+body.horizion-page .collaboration-text{max-width:760px;margin:0 auto 34px;color:#d2d0cb;font-size:20px;line-height:1.55}
+body.horizion-page .partner-columns,body.horizion-page .promise-grid{display:flex}
+body.horizion-page .partner-columns{width:1040px;margin:0 auto;gap:18px;text-align:left}
+body.horizion-page .partner-column{flex:1;padding:26px 24px 24px;border:1px solid rgba(195,155,72,.35);border-radius:8px;background:rgba(255,255,255,.04);box-shadow:0 18px 30px rgba(8,10,16,.35)}
+body.horizion-page .partner-title{color:#f2f0eb;font-size:23px;font-weight:600;margin-bottom:12px}
+body.horizion-page .partner-list{padding-left:20px;color:#ddd8cf;font-size:17px;line-height:1.7}
+
+body.horizion-page .promise-section{background:#ece9e2;padding:100px 0 130px;text-align:center}
+body.horizion-page .promise-wrap{width:1420px;margin:0 auto;padding:0 36px}
+body.horizion-page .promise-grid{justify-content:center;gap:34px}
+body.horizion-page .promise-card{width:300px;padding:18px 16px 20px;color:#2a2f35}
+body.horizion-page .promise-icon{width:72px;height:72px;display:flex;align-items:center;justify-content:center;margin:0 auto 20px;border:1px solid #ddcfb0;border-radius:50%;background:rgba(255,255,255,.4);font-size:28px}
+body.horizion-page .promise-card p{color:#5a6168;font-size:16px;line-height:1.65}
+
+body.horizion-page .contact-section{background:#10151d;color:#e8edf5;padding:88px 0 100px}
+body.horizion-page .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+body.horizion-page .contact-card{background:rgba(255,255,255,.04);border:1px solid rgba(195,155,72,.26);border-radius:9px;padding:20px 22px}
+body.horizion-page .contact-card h3{color:#f7f3eb;font-size:21px;margin-bottom:8px}
+body.horizion-page .contact-card p{color:#cfd6df;font-size:15px;line-height:1.6}
+
+body.horizion-page .site-footer{background:linear-gradient(90deg,#2a2d34,#2c2f36);color:#d7dce4;padding:74px 0 34px}
+body.horizion-page .footer-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:30px;margin-bottom:50px}
+body.horizion-page .footer-brand{font-size:40px;color:#f4f7fb;margin-bottom:18px;letter-spacing:.6px}
+body.horizion-page .footer-desc{max-width:360px;color:#b7bec8;font-size:14px;line-height:1.7}
+body.horizion-page .footer-title{color:#e6c070;letter-spacing:2px;font-size:12px;margin-bottom:16px;font-weight:600}
+body.horizion-page .footer-list{list-style:none;display:flex;flex-direction:column;gap:11px}
+body.horizion-page .footer-list a{color:#bfc6d0;text-decoration:none;font-size:14px;transition:color .2s}
+body.horizion-page .footer-list a:hover{color:#f3d79a}
+body.horizion-page .footer-bottom{border-top:1px solid rgba(214,196,152,.14);padding-top:24px;display:flex;justify-content:space-between;align-items:center;color:#b7bec8;font-size:13px}
+
+/* DESTINATION */
+body.destination-page{background:#f3efe7;color:#1f252f;padding:50px 30px 70px}
+body.destination-page .page-wrap{width:1280px;margin:0 auto}
+body.destination-page .topbar{margin-bottom:34px}
+body.destination-page .back-link,body.booking-page .back-link{display:inline-block;text-decoration:none;border-radius:6px;padding:8px 14px}
+body.destination-page .back-link{color:#7d6330;font-size:16px;border:1px solid #d5c6a4;background:#fff9ee}
+body.destination-page .heading-label,body.booking-page .label{color:#b48a39;font-size:12px;margin-bottom:10px}
+body.destination-page .heading-label{letter-spacing:7px;margin-bottom:14px}
+body.booking-page .label{letter-spacing:6px}
+body.destination-page h1{font-size:56px;margin-bottom:14px}
+body.destination-page h1 span{color:#b48a39;font-style:italic}
+body.destination-page .intro,body.booking-page .sub{color:#5a6168;line-height:1.6}
+body.destination-page .intro{max-width:780px;font-size:18px;margin-bottom:42px}
+body.booking-page .sub{font-size:16px;margin-bottom:24px}
+body.destination-page .category{margin-bottom:56px}
+body.destination-page .category-title{font-size:34px;margin-bottom:22px}
+body.destination-page .cards,body.destination-page .card-actions{display:flex}
+body.destination-page .cards{flex-wrap:wrap;gap:18px}
+body.destination-page .card-actions{gap:10px}
+body.destination-page .card{width:306px;border:1px solid #dfd3bb;border-radius:10px;background:#fffdf8;overflow:hidden;box-shadow:0 8px 18px rgba(35,41,49,.08)}
+body.destination-page .image-space{height:180px;border-bottom:1px dashed #d6c9af;background:linear-gradient(135deg,#eee8db,#f7f3ea);display:flex;align-items:center;justify-content:center;color:#9a8f7a;font-size:14px;letter-spacing:1.2px}
+body.destination-page .card-content{padding:16px 16px 18px}
+body.destination-page .card-title{font-size:27px;margin-bottom:8px}
+body.destination-page .card-text{color:#5e6670;font-size:15px;line-height:1.5;margin-bottom:14px;min-height:46px}
+body.destination-page .btn{flex:1;text-align:center;text-decoration:none;border-radius:6px;padding:10px;font-size:14px;font-weight:600;border:1px solid #b99653}
+body.destination-page .btn-details{color:#6b552a;background:#fff7e6}
+body.destination-page .btn-book{color:#fff;background:#b48a39}
+body.destination-page .details-modal{position:fixed;inset:0;display:none;align-items:center;justify-content:center;background:rgba(22,24,31,.62);z-index:999;padding:24px}
+body.destination-page .details-modal.show{display:flex}
+body.destination-page .details-box{width:760px;max-width:94vw;background:#fffdf8;border:1px solid #dfd3bb;border-radius:12px;box-shadow:0 16px 30px rgba(31,37,47,.2);padding:20px 22px 24px;position:relative}
+body.destination-page .details-close{position:absolute;top:12px;right:12px;width:34px;height:34px;border:1px solid #d8caa9;border-radius:50%;background:#fff7e7;color:#6f5a2f;font-size:18px;cursor:pointer}
+body.destination-page .details-title{font-size:34px;margin-bottom:10px;color:#242a32;padding-right:40px}
+body.destination-page .details-body{color:#4f5862;font-size:16px;line-height:1.62}
+body.destination-page .details-body p{margin-bottom:10px}
+body.destination-page .coming-soon{margin:16px 0 6px;text-align:center;font-size:56px;letter-spacing:4px;font-weight:700;color:#b48a39;line-height:1.05}
+body.destination-page .coming-note{text-align:center;font-size:16px;color:#6a727b;margin-top:6px}
+
+/* BOOKING */
+body.booking-page{background:#f4efe4;color:#1f252f;padding:50px 24px 70px}
+body.booking-page .booking-wrap{width:920px;margin:0 auto;background:#fffdf8;border:1px solid #e3d7bf;border-radius:12px;box-shadow:0 12px 22px rgba(45,39,28,.1);padding:34px 34px 40px}
+body.booking-page .top-row{margin-bottom:22px}
+body.booking-page .back-link{color:#735b2f;font-size:15px;border:1px solid #d6c7a8;background:#fff7e8}
+body.booking-page h1{font-size:44px;margin-bottom:8px}
+body.booking-page .form-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px}
+body.booking-page .full{grid-column:1 / -1}
+body.booking-page .field{display:flex;flex-direction:column;gap:6px}
+body.booking-page .field label{font-size:13px;color:#4e5660}
+body.booking-page .field input,body.booking-page .field select,body.booking-page .field textarea{border:1px solid #d9ccb3;border-radius:7px;padding:11px 12px;font-size:15px;font-family:inherit;background:#fff;color:#212832;outline:none}
+body.booking-page .field textarea{resize:vertical;min-height:100px}
+body.booking-page .submit-btn{margin-top:10px;border:1px solid #b48a39;background:#b48a39;color:#fff;border-radius:8px;padding:12px 18px;font-size:16px;font-weight:600;cursor:pointer}
